@@ -37,9 +37,6 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.2
         
-      - name: install runtime dependencies only
-        run: npm ci --omit=dev
-        
       - name: Docker Login
         uses: docker/login-action@v3.1.0
         with:
